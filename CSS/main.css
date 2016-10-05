@@ -68,18 +68,26 @@ label {
   display: block;
 }
 
-input {
+input,
+#state {
   width: 92%;
-  margin: 5px auto;
-}
-
-input[type="text"] {
+  margin: 10px auto;
   background: #f6f6f6;
   border-radius: 5px;
   padding: 12px;
   text-align: right;
   font-weight: 300;
   font-size: .7em;
-  font-style: italic;;
+  font-style: italic;
   border: none;
+}
+
+input:focus {
+  border: 3px solid #283946;
+  font-style: normal;
+  font-size: 1em;
+}
+
+input[id="zipcode"] {
+  width: 30%;
 }
