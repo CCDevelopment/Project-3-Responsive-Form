@@ -33,7 +33,7 @@ p {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 400;
   color: lightgrey;
-  text-align: center;
+  text-align: left;
   padding: 5px;
   margin: 0 auto;
 }
@@ -90,4 +90,23 @@ input:focus {
 
 input[id="zipcode"] {
   width: 30%;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  width: 5%;
+  margin: 10px;
+  display: inline-block;
+}
+
+input[type="textarea"] {
+  height: 100px;
+}
+
+.checkbox {
+  width: 100%;
+}
+
+.checkbox label {
+  display: inline-block;
+  margin: 0 auto;
 }

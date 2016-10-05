@@ -50,9 +50,34 @@
         <input type="number" name="zipcode" id="zipcode" placeholder=""><br>
       </section>
     </fieldset>
+    <hr>
     <fieldset>
       <section id="newsletter" class="formheading">
         <legend>Newsletter</legend>
+          <p>Select the newsletters you would like to recieve</p>
+          <div class="checkbox">
+            <input type="checkbox" name="mailcategories" value="htmlnews" id="htmlnews">
+          <label for="htmlnews">HTML News</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="mailcategories" value="cssnews" id="cssnews">
+          <label for="cssnews">CSS News</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="mailcategories" value="javascriptnews" id="javascriptnews">
+          <label for="javascriptnews">Javascript News</label>
+        </div>
+          <p>Newsletter format</p>
+        <div class="checkbox">
+          <input type="radio" name="mailformat" value="html" id="html">
+          <label for="html">HTML</label>
+        </div>
+          <div class="checkbox">
+          <input type="radio" name="mailformat" value="plaintext" id="plaintext">
+          <label for="plaintext">Plain Text</label>
+        </div>
+          <p>Other topics you'd like to hear about:</p>
+          <input type="textarea" name="othertopics">
       </section>
     </fieldset>
     </form>
