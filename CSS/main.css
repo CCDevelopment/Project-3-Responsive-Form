@@ -3,6 +3,11 @@ body {
   background-color: #fff;
 }
 
+.content {
+  width: 100%;
+  margin: 0 auto;
+}
+
 header {
   background-color: #2B3946;
   width: 100%;
@@ -129,4 +134,43 @@ footer p {
   text-align: center;
   padding: 5px;
   margin-bottom: 20px;
+}
+
+/************************************
+Media Query break @ 760 px
+**********************************/
+
+@Media (min-width: 760px) {
+
+  .introductiontext p {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  label {
+    color: darkgrey;
+    display: inline-block;
+    width: 15%;
+    padding: 10px;
+    margin-left: 5px;
+  }
+
+  input,
+  #state {
+    width: 50%;
+    margin: 10px 5%;
+    background: #f6f6f6;
+    border-radius: 5px;
+    padding: 12px;
+    text-align: right;
+    font-weight: 300;
+    font-size: .7em;
+    font-style: italic;
+    border: none;
+  }
+
+  input[id="zipcode"] {
+    width: 20%;
+  }
+
 }
