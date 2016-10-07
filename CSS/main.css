@@ -87,7 +87,7 @@ input,
   border: none;
 }
 
-input:focus, input:active {
+input:focus, input:active, input:checked {
   border: 3px solid #283946;
   font-style: normal;
   font-size: 1em;
@@ -95,10 +95,6 @@ input:focus, input:active {
 
 input[id="zipcode"] {
   width: 30%;
-}
-
-input:checked {
-    border: 10px solid green;
 }
 
 input[type="checkbox"], input[type="radio"] {
