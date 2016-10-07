@@ -146,6 +146,7 @@ Media Query break @ 760 px
   .content {
     width: 90%;
     margin: 0 auto;
+    max-width: 760px;
   }
 
   .introductiontext p {
