@@ -1,6 +1,8 @@
 
 body {
-  background-color: #fff;
+  /*background-color: #fff;*/
+  background-image: url('../images/backgroundcode.png');
+  background-size: cover;
 }
 
 .content {
@@ -27,6 +29,16 @@ h1 {
 h2, legend {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 600;
+  color: #2B3946;
+  text-align: center;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  font-size: .5em;
   color: #2B3946;
   text-align: center;
   padding: 5px;
@@ -77,7 +89,7 @@ input,
 #state {
   width: 92%;
   margin: 10px auto;
-  background: #f6f6f6;
+  background: #fff;
   border-radius: 5px;
   padding: 12px;
   text-align: right;
@@ -85,12 +97,15 @@ input,
   font-size: .7em;
   font-style: italic;
   border: none;
+  transition: background-color 1s ease;
 }
 
 input:focus, input:active, input:checked {
   border: 3px solid #283946;
   font-style: normal;
   font-size: 1em;
+  background-color: #283946;
+  color: white;
 }
 
 input[id="zipcode"] {
@@ -98,17 +113,27 @@ input[id="zipcode"] {
 }
 
 input[type="checkbox"], input[type="radio"] {
+  border: 3px solid red;
   width: 5%;
   margin: 2% 1%;
   padding: 1px;
   display: inline-block;
 }
 
+
 input[type="textarea"] {
   height: 100px;
+  width: 92%;
+  text-align: left;
+  transition: background-color 1s ease;
 }
 
-input[type="submit"] {
+input[type="textarea"]:focus {
+  background-color: #283946;;
+  color: white;
+}
+
+input[type="submit"], input[type="reset"] {
   width: 92.5%;
   text-align: center;
   padding: 25px;
@@ -121,8 +146,28 @@ input[type="submit"] {
   margin: 10px;
 }
 
+input[type="reset"] {
+  text-align: center;
+  padding: 25px;
+  font-size: 1.3em;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #ff9898;
+}
+
+input[type="reset"]:hover {
+  background-color: #fff;
+}
+
 .checkbox {
   width: 100%;
+}
+
+textarea {
+  width: 92%;
+  height: 100px;
 }
 
 .checkbox label {
@@ -166,7 +211,7 @@ Media Query break @ 760 px
   #state {
     width: 50%;
     margin: 10px 5%;
-    background: #f6f6f6;
+    background: #fff;
     border-radius: 5px;
     padding: 12px;
     text-align: right;
@@ -184,13 +229,19 @@ Media Query break @ 760 px
   }
 
   input[type="textarea"] {
-    width: 100%;
+    width: 92%;
     margin: 0 auto;
     padding: 25px 0px;
   }
 
   input[type="submit"] {
-    width: 97.5%;
+    width: 92%;
+    margin: 1%;
+    padding: 25px 0px;
+  }
+
+  input[type="reset"] {
+    width: 92%;
     margin: 1%;
     padding: 25px 0px;
   }
@@ -203,6 +254,19 @@ Media Query break @ 760 px
 
   input[id="zipcode"] {
     width: 20%;
+  }
+
+}
+
+/************************************
+Media Query break @ 760 px
+**********************************/
+
+@media (min-width: 1024px) {
+
+  fieldset {
+    border: 1px solid grey;
+    margin-bottom: 10px;
   }
 
 }

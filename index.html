@@ -23,18 +23,19 @@
       <hr>
     <form>
       <fieldset>
-      <section id="contactinfomration" class="formheading">
         <legend>Contact Information</legend>
+      <section id="contactinfomration" class="formheading">
+        <h3>Please enter your contact information</h3>
         <label for="fullname">Full Name</label>
-        <input type="text" name="fullname" id="fullname" placeholder="Required "><br>
+        <input type="text" name="fullname" id="fullname" placeholder="Required " required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 5 or more characters"><br>
         <label for="email">Email address</label>
-        <input type="email" name="email" id="email" placeholder="Required "><br>
+        <input type="email" name="email" id="email" placeholder="Required " required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br>
         <label for="phone">Phone Number</label>
-        <input type="tel" name="phone" id="phone" placeholder=""><br>
+        <input type="tel" name="phone" id="phone"><br>
         <label for="streetaddress">Street address</label>
-        <input type="text" name="streetaddress" id="streetaddress" placeholder=""><br>
+        <input type="text" name="streetaddress" id="streetaddress" placeholder="Street address goes here please."><br>
         <label for="city">City</label>
-        <input type="text" name="city" id="city" placeholder=""><br>
+        <input type="text" name="city" id="city" placeholder="Enter your city"><br>
         <label for="state">State</label>
           <select id="state" name="state">
             <optgroup label="States">
@@ -52,8 +53,9 @@
     </fieldset>
     <hr>
     <fieldset>
+      <legend>Newsletter</legend>
       <section id="newsletter" class="formheading">
-        <legend>Newsletter</legend>
+        <h3>All the latest, right to your inbox.</h3>
           <p>Select the newsletters you would like to recieve</p>
           <div class="checkbox">
             <input type="checkbox" name="mailcategories" value="htmlnews" id="htmlnews">
@@ -77,13 +79,22 @@
           <label for="plaintext">Plain Text</label>
         </div>
           <p>Other topics you'd like to hear about:</p>
-          <input type="textarea" name="othertopics">
+          <textarea></textarea>
+      </section>
+    </fieldset>
+    <fieldset>
+      <legend>Timing</legend>
+      <section>
+        <h3>Final details...</h3>
+        <label for="date">Birthday</label>
+        <input type="date" name="date" id="date">
+        <label for="time">Current time</label>
+        <input type="time" name="usr_time" id="time">
       </section>
     </fieldset>
     <input type="submit" value="sign up">
+    <input type="reset">
     </form>
-
-
   </main>
 
   <footer class="footer">
